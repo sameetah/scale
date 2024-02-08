@@ -18,18 +18,20 @@ export const ActionsCell: Cell = {
     return (
       <div class={`tbody__actions`}>
         {content.map((action) => {
-          const { label, ...props } = action;
+          const { label,tooltip, ...props } = action;
+          const tooltipProps = tooltip ? { 'title': tooltip } : {};
           if (typeof label === 'object' && '__html' in label) {
             return (
               <scale-button
                 size="small"
                 innerHTML={label.__html}
                 {...props}
+                {...tooltipProps}
               ></scale-button>
             );
           }
           return (
-            <scale-button size="small" {...props}>
+            <scale-button size="small" {...props} {...tooltipProps}>
               {label}
             </scale-button>
           );
