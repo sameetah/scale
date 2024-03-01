@@ -1,9 +1,6 @@
 # app-navigation-user-menu
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -12,13 +9,11 @@
 | `hide`       | --           |             | `() => void` | `undefined` |
 | `navigation` | `navigation` |             | `any`        | `undefined` |
 
-
 ## Events
 
 | Event       | Description | Type               |
 | ----------- | ----------- | ------------------ |
 | `closeMenu` |             | `CustomEvent<any>` |
-
 
 ## Shadow Parts
 
@@ -26,13 +21,13 @@
 | ------------------- | ----------- |
 | `"rule-horizontal"` |             |
 
-
 ## Dependencies
 
 ### Used by
 
- - [scale-app-header](../app-header)
- - [scale-telekom-header-data-back-compat](../telekom-header-data-back-compat)
+- [scale-app-header](../app-header)
+- [scale-telekom-header-data-back-compat](../telekom-header-data-back-compat)
+- [scale-telekom-profile-menu](../telekom-profile-menu)
 
 ### Depends on
 
@@ -40,15 +35,20 @@
 - [scale-icon](../../icon)
 
 ### Graph
+
 ```mermaid
 graph TD;
   app-navigation-user-menu --> scale-button
   app-navigation-user-menu --> scale-icon
   scale-app-header --> app-navigation-user-menu
   scale-telekom-header-data-back-compat --> app-navigation-user-menu
+<<<<<<< HEAD
+=======
+  scale-telekom-profile-menu --> app-navigation-user-menu
+>>>>>>> dcbbfdb8059e0b730046867ed6f175ac6f63fe9d
   style app-navigation-user-menu fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
-----------------------------------------------
+---
 
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

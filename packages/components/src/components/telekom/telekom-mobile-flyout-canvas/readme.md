@@ -1,9 +1,6 @@
 # scale-telekom-mobile-flyout-canvas
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -15,13 +12,11 @@
 | `closeButtonLabel` | `close-button-label` |             | `string` | `'Close'`   |
 | `closeButtonTitle` | `close-button-title` |             | `string` | `null`      |
 
-
 ## Events
 
 | Event                    | Description | Type               |
 | ------------------------ | ----------- | ------------------ |
 | `scale-close-nav-flyout` |             | `CustomEvent<any>` |
-
 
 ## Shadow Parts
 
@@ -34,25 +29,27 @@
 | `"heading"`      |             |
 | `"meta"`         |             |
 
-
 ## Dependencies
 
 ### Used by
 
- - [scale-telekom-header-data-back-compat](../telekom-header-data-back-compat)
+- [scale-telekom-header-data-back-compat](../telekom-header-data-back-compat)
+- [scale-telekom-profile-menu](../telekom-profile-menu)
 
 ### Depends on
 
 - [scale-icon-action-close](../../icons/action-close)
 
 ### Graph
+
 ```mermaid
 graph TD;
   scale-telekom-mobile-flyout-canvas --> scale-icon-action-close
   scale-telekom-header-data-back-compat --> scale-telekom-mobile-flyout-canvas
+  scale-telekom-profile-menu --> scale-telekom-mobile-flyout-canvas
   style scale-telekom-mobile-flyout-canvas fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
-----------------------------------------------
+---
 
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

@@ -1,9 +1,6 @@
 # scale-menu-flyout-list
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -17,7 +14,6 @@
 | `styles`              | `styles`                | (optional) Injected styles                                                         | `string`                                                                            | `undefined`      |
 | `trigger`             | --                      |                                                                                    | `() => HTMLElement`                                                                 | `undefined`      |
 
-
 ## Events
 
 | Event         | Description                                                                                        | Type                                  |
@@ -27,39 +23,25 @@
 | `scaleClose`  | <span style="color:red">**[DEPRECATED]**</span> in v3 in favor of kebab-case event names<br/><br/> | `CustomEvent<{ list: HTMLElement; }>` |
 | `scaleOpen`   | <span style="color:red">**[DEPRECATED]**</span> in v3 in favor of kebab-case event names<br/><br/> | `CustomEvent<{ list: HTMLElement; }>` |
 
-
 ## Methods
 
 ### `close(silent?: boolean) => Promise<void>`
 
-
-
 #### Returns
 
 Type: `Promise<void>`
-
-
 
 ### `open() => Promise<void>`
 
-
-
 #### Returns
 
 Type: `Promise<void>`
-
-
 
 ### `setFocus() => Promise<void>`
 
-
-
 #### Returns
 
 Type: `Promise<void>`
-
-
-
 
 ## Shadow Parts
 
@@ -67,24 +49,26 @@ Type: `Promise<void>`
 | -------- | ----------- |
 | `"base"` |             |
 
-
 ## Dependencies
 
 ### Used by
 
- - [scale-app-header](../telekom/app-header)
- - [scale-data-grid](../data-grid)
- - [scale-telekom-header-data-back-compat](../telekom/telekom-header-data-back-compat)
+- [scale-app-header](../telekom/app-header)
+- [scale-data-grid](../data-grid)
+- [scale-telekom-header-data-back-compat](../telekom/telekom-header-data-back-compat)
+- [scale-telekom-profile-menu](../telekom/telekom-profile-menu)
 
 ### Graph
+
 ```mermaid
 graph TD;
   scale-app-header --> scale-menu-flyout-list
   scale-data-grid --> scale-menu-flyout-list
   scale-telekom-header-data-back-compat --> scale-menu-flyout-list
+  scale-telekom-profile-menu --> scale-menu-flyout-list
   style scale-menu-flyout-list fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
-----------------------------------------------
+---
 
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
