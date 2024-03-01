@@ -11,6 +11,8 @@
     <script type="module" src="/build/scale-components.esm.js"></script>
     <script nomodule src="/build/scale-components.js"></script>
     <link rel="stylesheet" href="/build/scale-components.css" />
+ 
+
     <style>
       html {
         margin: 0;
@@ -129,7 +131,7 @@
         Export Selection
       </scale-button> -->
     </scale-data-grid>
-
+    
     <script>
       const fields = [
         {
@@ -231,10 +233,13 @@
               variant: 'secondary',
               onClick: () => alert('Edit'),
               disabled: true,
+              iconName: 'edit',
               tooltip: 'This action is disabled because...',
+             
             },
             {
               label: 'Delete',
+              iconName: 'delete',
               variant: 'secondary',
               onClick: () => alert('Delete'),
             },
